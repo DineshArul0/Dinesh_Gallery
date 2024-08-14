@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    background-color: #F7EFE5; /* Light background */
+    color: #674188; /* Darker text color for contrast */
+}
+
+/* Container Styles */
+.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Header Styles */
+h1 {
+    color: #674188; /* Darker color for headings */
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid #E2BFD9; /* Light pink border for cards */
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1rem; /* Space between cards */
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 150px; /* Adjust card image height */
+}
+
+.card-body {
+    background-color: #C8A1E0; /* Light purple background for card body */
+    color: #674188; /* Darker text color for card body */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Card Layout */
+.row-cols-1 {
+    --bs-row-cols: 1;
+}
+
+@media (min-width: 576px) {
+    .row-cols-sm-2 {
+        --bs-row-cols: 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .row-cols-md-3 {
+        --bs-row-cols: 3;
+    }
+}
+
+@media (min-width: 992px) {
+    .row-cols-lg-4 {
+        --bs-row-cols: 4;
+    }
+}
+
+@media (min-width: 1200px) {
+    .row-cols-xl-6 {
+        --bs-row-cols: 6;
+    }
+}
+
+/* Modal Styles */
+.modal-dialog {
+    max-width: 90%;
+    margin: auto; /* Center the modal */
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Max height for the modal */
+}
+
+.modal-body img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-secondary {
+    background-color: #E2BFD9;
+    border-color: #E2BFD9;
+    color: #674188;
+}
+
+.btn-secondary:hover {
+    background-color: #C8A1E0;
+    border-color: #C8A1E0;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #674188;
+    background-color: #F7EFE5;
+    border: 1px solid #E2BFD9;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.left-arrow {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-arrow {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow:hover {
+    background-color: #E2BFD9;
+    color: #674188;
+}
